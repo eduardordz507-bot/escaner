@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Escáner</title>
+  <meta name="description" content="Escanea documentos con tu cámara, crea PDF y extrae texto. Todo se queda en tu teléfono.">
+  <meta name="theme-color" content="#0e8f70">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Escáner">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app"></main>
+  <input id="camIn" type="file" accept="image/*" capture="environment" hidden>
+  <input id="galIn" type="file" accept="image/*" multiple hidden>
+  <div id="busy" hidden><div class="busy-box"><div class="spinner"></div><div class="busy-msg"></div></div></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
